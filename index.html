@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend and Backend Integration</title>
+    <!-- Corrected link to static files using url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='static_style.css') }}">
+</head>
+<body>
+    <h1>Data from MongoDB</h1>
+    <div id="data"></div>
+    <form id="dataForm">
+        <input type="text" name="key" placeholder="Key" required>
+        <input type="text" name="value" placeholder="Value" required>
+        <button type="submit">Add Data</button>
+    </form>
+
+    <!-- Corrected script link -->
+    <script src="{{ url_for('static', filename='static_script.js') }}"></script>
+</body>
+</html>
